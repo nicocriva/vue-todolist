@@ -6,7 +6,7 @@
 }
 
 /*-----container-----*/
-.container{
+#container{
     width: 60%;
     height: calc(100vh - 30px);
     margin: 0 auto;
@@ -56,6 +56,7 @@ h1 > i{
     background-color: rgb(221, 221, 221);
     background-image: url(../img/imageedit_2_6050826305.png);
     background-position: top;
+    overflow-y: auto;
 }
 
 #listContainer {
@@ -66,6 +67,12 @@ h1 > i{
     text-align: center;
     margin-bottom: 20px;
     color: black;
+}
+
+#empty{
+    position: relative;
+    left: 50px;
+    top: 20px;
 }
 
 #listContainer ul li{
@@ -80,4 +87,14 @@ h1 > i{
 #listContainer ul li:hover{
     background-color: rgba(236, 236, 236, 0.7);
     cursor: pointer;
+}
+
+.fa-trash-alt{
+    padding: 3px;
+}
+
+.fa-trash-alt:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: rgba(255, 0, 0, 0.75);
 }

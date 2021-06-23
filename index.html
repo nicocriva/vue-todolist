@@ -14,25 +14,29 @@
 </head>
 <body>
     
-    <div class="container">
+    <div id="container">
+        <!-- titolo -->
         <h1>
             <i class="fas fa-plane"></i>
             New York Trip - To Do List
             <i class="fas fa-plane airplane2"></i>
         </h1>
 
+        <!-- sezione input -->
         <div id="addSection">
-            <input type="text" placeholder="Aggiungi una tappa!">
-            <button>Add</button>
+            <input v-model="newMessage" @keyup.enter="addBtn" type="text" placeholder="Aggiungi una tappa!">
+            <button @click="addBtn">Add</button>
         </div>
 
+        <!-- todo list -->
         <div id="listContainer">
             <h2>Cosa fare nella Grande Mela</h2>
+            <h3 id="empty"></h3>
             <ul>
-                <li>Visitare la Statua della Libertà<i class="far fa-trash-alt"></i></i></li>
-                <li>Noleggiare una bicicletta a Central Park<i class="far fa-trash-alt"></i></i></li>
-                <li>Memoriale dell'11 settembre<i class="far fa-trash-alt"></i></i></li>
-                <li>Museo d'arte moderna - MoMA<i class="far fa-trash-alt"></i></i></li>
+                <li v-for="(item, index) in todo">
+                    {{index}} - {{item}} 
+                    <i class="far fa-trash-alt" @click="trash"></i>
+                </li>
             </ul>
         </div>
         
