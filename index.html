@@ -7,10 +7,36 @@
     <title>To do list</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
+    <div class="container">
+        <h1>
+            <i class="fas fa-plane"></i>
+            New York Trip - To Do List
+            <i class="fas fa-plane airplane2"></i>
+        </h1>
 
+        <div id="addSection">
+            <input type="text" placeholder="Aggiungi una tappa!">
+            <button>Add</button>
+        </div>
+
+        <div id="listContainer">
+            <h2>Cosa fare nella Grande Mela</h2>
+            <ul>
+                <li>Visitare la Statua della Libertà<i class="far fa-trash-alt"></i></i></li>
+                <li>Noleggiare una bicicletta a Central Park<i class="far fa-trash-alt"></i></i></li>
+                <li>Memoriale dell'11 settembre<i class="far fa-trash-alt"></i></i></li>
+                <li>Museo d'arte moderna - MoMA<i class="far fa-trash-alt"></i></i></li>
+            </ul>
+        </div>
+        
+    </div>
 
     <script src="js/script.js"></script>
 </body>
