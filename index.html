@@ -34,8 +34,11 @@
             <h3 id="empty"></h3>
             <ul>
                 <li v-for="(item, index) in todo">
-                    {{index}} - {{item}} 
-                    <i class="far fa-trash-alt" @click="trash"></i>
+                    {{index}} - {{item}}
+                    <div class="icons">
+                        <i :id="index" class="fas fa-check" @click="check(index)"></i>
+                        <i class="far fa-trash-alt" @click="trash(index)"></i>
+                    </div>
                 </li>
             </ul>
         </div>

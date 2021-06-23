@@ -23,11 +23,15 @@ const app = new Vue(
                 }
                 this.newMessage = ''
             },
-            trash: function(){
-                this.todo.splice(this.todo.index, 1)
+            trash: function(index){
+                this.todo.splice(index, 1);
                 if(this.todo.length == 0){
                     document.getElementById('empty').innerHTML = 'To Do list vuota &#128533;'
                 }
+            },
+            check: function(index){
+                let myVar = document.getElementById(index);
+                myVar.classList.add('green');
             }
         }
     }

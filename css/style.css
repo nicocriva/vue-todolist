@@ -78,6 +78,7 @@ h1 > i{
 #listContainer ul li{
     list-style: none;
     padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.349);
     border-bottom: 1px solid rgb(165, 165, 165);
     display: flex;
     justify-content: space-between;
@@ -89,7 +90,20 @@ h1 > i{
     cursor: pointer;
 }
 
-.fa-trash-alt{
+.fa-check{
+    margin: 0 10px;
+}
+
+.fa-check:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.green{
+    color: green;
+}
+
+.fa-trash-alt, .fa-check{
     padding: 3px;
 }
 
